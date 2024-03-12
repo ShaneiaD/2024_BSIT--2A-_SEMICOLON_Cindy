@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .profile-picture {
+      max-width: 200px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="My files/Downloads/STS/DSC_2408.jpg" align="right">
+
+  <h2>DACUBA, CINDY SHANE S.</h2>
+  <p>Email: dacubacindyshane@gmail.com</p>
+  <p>Phone: 0992-447-8933</p>
+  <br><hr>
+
+  <h2><u>Objective</u></h2>
+  <p>I am a fast learner, self-motivated and able to work independently with minimum supervision. Efficiency to work under padding with systematic manner. Willing to learn and able to cooperate in teamwork.</p>
+  <br><hr>
+
+    <h2><u>Personal Information</u></h2>
+      <p>Date of Birth: JULY 15, 2004</p>
+      <p>Citizenship: FILIPINO</p>
+      <p>Sex: FEMALE</p>
+      <p>Civil Status: SINGLE</p>
+      <p>Height: 4'10</p> 
+      <p>Weight: 48kls.</p>
+      <br><hr>
+
+  <h2><u>Education</u></h2>
+  <table border="1" cellpadding="5" cellspacing="5" width="100%">
+    <tr bgcolor="lightblue">
+        <th>School</th>
+        <th>School Year</th>
+    </tr>
+    <tr>
+        <td>POLANGUI GENERAL COMPREHENSIVE HIGH SCHOOL</td>
+        <td>S.Y. 2016 - 2022</td>
+    </tr>
+    <tr>
+        <td>POLANGUI NORTH CENTRAL SCHOOL</td>
+        <td>S.Y. 2015 - 2016</td>
+    </tr>
+    <tr>
+        <td>SANTICON ELEMENTARY SCHOOL</td>
+        <td>S.Y. 2009 - 2015</td>
+    </tr>
+</table><br><hr>
+
+  <h2><u>Achievement</u></h2>
+    <ul>
+        <li>Consistent Honor student since grade 9 </li>
+        <li>SHS Digimagz 1st Placer</li>
+        <li>School-District: Athletics (Running) Competition Qualifier</li>
+    </ul>
+
+  <br><hr> 
+  <h2><u>Personal Skills</u></h2>
+  <style>
+  canvas {
+    border: 1px solid #000;
+  }
+ </style>
+ 
+ <canvas id="myCanvas" width="400" height="300"></canvas>
+
+ <script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+
+  // Define data for the graph
+  var data = [70, 100, 75];
+
+  // Define bar width and spacing
+  var barWidth = 70;
+  var barSpacing = 30;
+  var startX = 60;
+
+  // Define maximum value for scaling
+  var maxValue = Math.max(...data);
+
+  // Draw bars
+  for (var i = 0; i < data.length; i++) {
+    var barHeight = (data[i] / maxValue) * (canvas.height - 50);
+    var x = startX + (barWidth + barSpacing) * i;
+    var y = canvas.height - barHeight - 20;
+    
+    ctx.fillStyle = "green";
+    ctx.fillRect(x, y, barWidth, barHeight);
+
+    // Display value on top of the bar
+    ctx.fillStyle = "black";
+    ctx.fillText(data[i], x + barWidth / 2 - 10, y - 5);
+
+    // Draw label for the bar
+    ctx.fillStyle = "black";
+    ctx.fillText("Teamwork", 70, 290); // Bar label
+
+    // Draw label for the bar
+    ctx.fillStyle = "black";
+    ctx.fillText("Communication", 160, 290); // Bar label
+
+    // Draw label for the bar
+    ctx.fillStyle = "black";
+    ctx.fillText("Leadership", 270, 290); // Bar label
+  }
+  </script>
+  
+  <br><hr>
+  <h2><u>Interest & Hobbies</u></h2> 
+    <ul> 
+        <li>MOVIES</li>
+        <li>MUSIC</li>
+        <li>TRAVEL</li>
+        <li>SPORT</li>
+    </ul>
+
+  <br><hr>
+  <h2><u>School Reference</u></h2>
+    <p><b> MS. CRISTINE S. RAYNES</b><br>
+    Senior High School Focal Person <br>
+    Polangui General Comprehensive High School
+    </p>
+
+    <p><b>MR. JESSE PAUL SARIO</b><br>
+    Senior High School Focal Person <br>
+    Polangui General Comprehensive High School
+    </p>
+
+    <p><b>MRS. ISABEL PORLAJE</b><br>
+    BSIT - 1A Instructor <br>
+    Bicol University Polangui
+    </p>
+
+
+</div>
+
+</body>
+</html>
