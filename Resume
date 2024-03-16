@@ -9,6 +9,8 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background: #CC33FF;
+      color: black;
     }
     .container {
       max-width: 800px;
@@ -19,6 +21,7 @@
       max-width: 200px;
       border-radius: 50%;
     }
+    
   </style>
 </head>
 <body>
@@ -28,8 +31,9 @@
 
   <h2>DACUBA, CINDY SHANE S.</h2>
   <p>Email: dacubacindyshane@gmail.com</p>
-  <p>Address: Zone 4 Santicon, Polangui, Albay, 4506</p> 
+  <p>Address: Zone 4 Santicon, Polangui, Albay, 4506</p>
   <p>Phone: 0992-447-8933</p>
+  <p>Facebook: <A HREF="https://www.facebook.com/cindyshane.dacuba">CINDY SHANE DACUBA</A></p>
   <br><hr>
 
   <h2><u>Objective</u></h2>
@@ -47,7 +51,7 @@
 
   <h2><u>Education</u></h2>
   <table border="1" cellpadding="5" cellspacing="5" width="100%">
-    <tr bgcolor="lightblue">
+    <tr bgcolor="#FF33FF">
         <th>School</th>
         <th>School Year</th>
     </tr>
@@ -86,41 +90,33 @@
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
 
-  // Define data for the graph
   var data = [70, 100, 75];
 
-  // Define bar width and spacing
   var barWidth = 70;
   var barSpacing = 30;
   var startX = 60;
 
-  // Define maximum value for scaling
   var maxValue = Math.max(...data);
 
-  // Draw bars
   for (var i = 0; i < data.length; i++) {
     var barHeight = (data[i] / maxValue) * (canvas.height - 50);
     var x = startX + (barWidth + barSpacing) * i;
     var y = canvas.height - barHeight - 20;
     
-    ctx.fillStyle = "green";
+    ctx.fillStyle = "#3399FF";
     ctx.fillRect(x, y, barWidth, barHeight);
 
-    // Display value on top of the bar
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "white";
     ctx.fillText(data[i], x + barWidth / 2 - 10, y - 5);
 
-    // Draw label for the bar
-    ctx.fillStyle = "black";
-    ctx.fillText("Teamwork", 70, 290); // Bar label
+    ctx.fillStyle = "white";
+    ctx.fillText("Teamwork", 70, 290); 
 
-    // Draw label for the bar
-    ctx.fillStyle = "black";
-    ctx.fillText("Communication", 160, 290); // Bar label
+    ctx.fillStyle = "white";
+    ctx.fillText("Communication", 160, 290);
 
-    // Draw label for the bar
-    ctx.fillStyle = "black";
-    ctx.fillText("Leadership", 270, 290); // Bar label
+    ctx.fillStyle = "white";
+    ctx.fillText("Leadership", 270, 290); 
   }
   </script>
   
